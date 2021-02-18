@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AddTestActivity">
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="350dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="628dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <TextView
+        android:id="@+id/textViewTestType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/test_type"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTestPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestTemperature"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/textViewTestTemperature"
+        android:layout_width="114dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/temperature"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestBPH2" />
+
+    <TextView
+        android:id="@+id/textViewTestBPH2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/bphtextview"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestBPL" />
+
+    <TextView
+        android:id="@+id/textViewTestBPL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/bpl"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestNurseID" />
+
+    <TextView
+        android:id="@+id/textViewTestNurseID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nurse_id"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestPatientID" />
+
+    <TextView
+        android:id="@+id/textViewTestPatientID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/patient_id"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTestType" />
+
+    <TextView
+        android:id="@+id/textViewEnterTestInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/enter_test_information"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="132dp"
+        android:layout_height="122dp"
+        android:contentDescription="@string/addtesticon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewEnterTestInfo"
+        app:layout_constraintVertical_bias="0.099"
+        app:srcCompat="@drawable/add_test" />
+
+    <Button
+        android:id="@+id/buttonAddTest"
+        android:layout_width="185dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#48B37F"
+        android:text="ADD"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTestPrice" />
+
+    <EditText
+        android:id="@+id/editTextTestType"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="@string/test_type_test"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.319"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestType"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTestPatientID"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/patient_id_test"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestPatientID"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTestType" />
+
+    <EditText
+        android:id="@+id/editTextTestNurseID"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/nurse_id_test"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestNurseID"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTestPatientID" />
+
+    <EditText
+        android:id="@+id/editTextTestBPL"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/bpltextview"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestBPL"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTestNurseID" />
+
+    <EditText
+        android:id="@+id/editTextTestBPH"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/bph"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestBPH2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTestBPL" />
+
+    <EditText
+        android:id="@+id/editTextTestTemperature"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="@string/temperature"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTestBPH" />
+
+    <EditText
+        android:id="@+id/editTextTestPrice"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="68dp"
+        android:ems="10"
+        android:hint="@string/price_test"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textViewTestPrice"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTestTemperature" />
+</androidx.constraintlayout.widget.ConstraintLayout>

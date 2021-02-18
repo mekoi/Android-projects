@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/textViewPatientID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Patient ID"/>
+        <TextView
+            android:id="@+id/textViewFirstName"
+            android:layout_below="@id/textViewPatientID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="First Name"/>
+        <TextView
+            android:id="@+id/textViewLastName"
+            android:layout_below="@id/textViewFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="Last Name" />
+        <TextView
+            android:id="@+id/textViewDepartment"
+            android:layout_below="@id/textViewLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="Department"/>
+        <TextView
+            android:id="@+id/textViewNurseId"
+            android:layout_below="@id/textViewDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="NurseID"/>
+        <TextView
+            android:id="@+id/textViewRoom"
+            android:layout_below="@id/textViewNurseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="Room" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

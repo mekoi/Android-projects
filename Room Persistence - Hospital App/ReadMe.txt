@@ -1,0 +1,1 @@
+The app allows the nurses to keep track of various tests performed daily on patients in a hospital. It could be used by nurses in hospitals or testing centers. Room persistence library and MVVM pattern are used to create and manipulate the application's database. 

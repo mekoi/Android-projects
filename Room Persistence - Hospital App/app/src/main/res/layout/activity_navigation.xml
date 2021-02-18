@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.NavigationActivity">
+
+    <ImageView
+        android:id="@+id/imageViewUpdatePatient"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="40dp"
+        android:contentDescription="@string/updateimageicon"
+        android:src="@drawable/update_patient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonViewPatient"
+        android:layout_width="169dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#46C293"
+        android:text="VIEW PATIENT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewUpdateTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUpdatePatient"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <ImageView
+        android:id="@+id/imageViewAddTest"
+        android:layout_width="142dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="140dp"
+        android:contentDescription="@string/addtesticon"
+        android:src="@drawable/add_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAddPatient" />
+
+    <ImageView
+        android:id="@+id/imageViewUpdateTest"
+        android:layout_width="143dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/updatetesticon"
+        android:src="@drawable/view_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUpdatePatient" />
+
+    <Button
+        android:id="@+id/buttonAddTest"
+        android:layout_width="170dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="#46C293"
+        android:text="ADD TEST"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAddTest"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/buttonViewTest"
+        android:layout_width="170dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#46C293"
+        android:text="VIEW TEST"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddTest"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewUpdateTest"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/textViewTests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tests"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAddTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAddEditPatient"
+        android:layout_width="170dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#46C293"
+        android:text="ADD/UPDATE PATIENT"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewAddTest"
+        app:layout_constraintEnd_toStartOf="@+id/buttonViewPatient"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAddPatient"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <ImageView
+        android:id="@+id/imageViewAddPatient"
+        android:layout_width="142dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:contentDescription="@string/addpatienticon"
+        android:src="@drawable/add_patient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPatients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/patients"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

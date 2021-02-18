@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/textViewTestId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Test ID"/>
+        <TextView
+            android:id="@+id/textViewTestType"
+            android:layout_below="@id/textViewTestId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Test Type"/>
+        <TextView
+            android:id="@+id/textViewPatientId"
+            android:layout_below="@id/textViewTestType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Patient ID"/>
+        <TextView
+            android:id="@+id/textViewNurseId"
+            android:layout_below="@id/textViewPatientId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="Nurse ID" />
+        <TextView
+            android:id="@+id/textViewTestBPL"
+            android:layout_below="@id/textViewNurseId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="BPL"/>
+        <TextView
+            android:id="@+id/textViewTestBPH"
+            android:layout_below="@id/textViewTestBPL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="BPH"/>
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:layout_below="@id/textViewTestBPH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="Temperature"/>
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_below="@id/textViewTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:text="Price"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

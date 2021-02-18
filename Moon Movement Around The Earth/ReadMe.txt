@@ -1,0 +1,1 @@
+This application simulates movement of moon around the earth. The user can start and stop the animation.

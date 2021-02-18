@@ -1,0 +1,1 @@
+This app is a frame-by-frame animation. Creates a series of pictures that differ slightly from each other. The user can start and stop the animation.

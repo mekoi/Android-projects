@@ -1,0 +1,1 @@
+The app allows the user to draw continuous horizontal or vertical lines, starting from a given position, using up, down, left, and right keys of Android keypad as well as image buttons in UI. Canvas object is used to implement the drawings.

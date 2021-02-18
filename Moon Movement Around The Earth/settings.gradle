@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='IrisiMeko_COMP304_Sec003_Lab3_Exercise2'
